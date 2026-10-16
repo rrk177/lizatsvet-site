@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Елизавета Цветкова — гримёр-визажист и стилист по волосам</title>
+  <meta name="description" content="Елизавета Цветкова — профессиональный гримёр-визажист и стилист по волосам. Более 11 лет в медиаиндустрии: кино, музыкальные клипы, реклама, театр, фотосессии.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230b0b0b'/%3E%3Cellipse cx='32' cy='32' rx='12' ry='20' fill='none' stroke='%23c9a66b' stroke-width='3'/%3E%3Cellipse cx='32' cy='32' rx='20' ry='12' fill='none' stroke='%23c9a66b' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Emblem: two crossing ovals, a "colour wheel" for Tsvetkova -->
+    <symbol id="emblem" viewBox="0 0 100 100">
+      <ellipse cx="50" cy="50" rx="22" ry="38" fill="none" stroke="currentColor" stroke-width="2"/>
+      <ellipse cx="50" cy="50" rx="38" ry="22" fill="none" stroke="currentColor" stroke-width="2" transform="rotate(-24 50 50)"/>
+      <circle cx="50" cy="50" r="3" fill="currentColor"/>
+    </symbol>
+    <filter id="brush" x="-5%" y="-30%" width="110%" height="160%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.012 0.6" numOctaves="3" seed="4" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="16" xChannelSelector="R" yChannelSelector="G" result="d"/>
+      <feTurbulence type="fractalNoise" baseFrequency="0.01 1.2" numOctaves="2" seed="9" result="s"/>
+      <feColorMatrix in="s" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -2 1.5" result="streaks"/>
+      <feComposite in="d" in2="streaks" operator="in"/>
+    </filter>
+    <symbol id="sweep" viewBox="0 0 800 140">
+      <path d="M12 82C120 40 300 28 470 34c140 4 260 4 312 22 12 6 8 24-10 28-120 22-300 16-460 26-130 8-240 14-292 6-18-4-24-24-10-34z"/>
+    </symbol>
+  </defs>
+</svg>
+
+<header class="hdr">
+  <nav class="hdr__left" aria-label="Разделы">
+    <a href="#works">Работы</a>
+    <a href="#about">Обо мне</a>
+    <a href="#video">Видео</a>
+  </nav>
+  <a class="hdr__logo" href="#top">LIZA&nbsp;TSVET</a>
+  <nav class="hdr__right" aria-label="Связь">
+    <a href="#contacts">Контакты</a>
+    <a href="https://t.me/ElizabethTsvet" target="_blank" rel="noopener">Telegram (+)</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <svg class="hero__rings" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+      <g fill="none" stroke="#c9a66b" stroke-opacity=".32" stroke-width="1">
+        <circle cx="700" cy="560" r="300"/>
+        <circle cx="700" cy="560" r="430"/>
+        <circle cx="700" cy="560" r="560"/>
+        <circle cx="700" cy="560" r="700"/>
+        <ellipse cx="700" cy="560" rx="860" ry="640"/>
+      </g>
+      <g fill="#c9a66b">
+        <circle cx="700" cy="130" r="3"/>
+      </g>
+    </svg>
+
+    <p class="hero__side hero__side--l">Гримёр-<br>визажист</p>
+    <p class="hero__side hero__side--r">Liza&nbsp;Tsvet<sup>®</sup><br>11+ лет</p>
+
+    <figure class="hero__photo">
+      <img src="../assets/img/md/cover.jpg" alt="Вечерний макияж со смоки-айс — работа Елизаветы Цветковой">
+    </figure>
+
+    <h1 class="hero__title">
+      Создаю образы для кино, клипов и&nbsp;рекламы: макияж, грим, спецэффекты и&nbsp;причёски.
+    </h1>
+  </section>
+
+  <!-- GOLD CARD bridging dark -> light -->
+  <div class="bridge">
+    <aside class="gold-card">
+      <p class="gold-card__name">Елизавета<br>Цветкова</p>
+      <p class="gold-card__txt">Профессиональный гримёр-визажист и&nbsp;стилист по&nbsp;волосам. Более 11&nbsp;лет в&nbsp;медиаиндустрии.</p>
+      <svg class="gold-card__emblem"><use href="#emblem"/></svg>
+      <div class="gold-card__links">
+        <a href="#works">Работы ›</a>
+        <a href="#about">Обо мне ›</a>
+        <a href="#contacts">Контакты ›</a>
+      </div>
+    </aside>
+  </div>
+
+  <!-- FORMATS — big stacked list -->
+  <section class="stack">
+    <figure class="stack__photo"><img src="../assets/img/md/makeup-14.jpg" alt="Мужской грим для образа скрипача" loading="lazy"></figure>
+    <ul class="stack__list">
+      <li>Кино <sup>(+)</sup></li>
+      <li>Клипы</li>
+      <li>Реклама</li>
+      <li>Театр</li>
+      <li>Фотосессии</li>
+      <li>Сцена</li>
+      <li>Свадьбы</li>
+    </ul>
+    <p class="stack__note">Полнометражные фильмы, музыкальные клипы, телевизионная реклама, театр, фотосессии, живые выступления, прямые трансляции, свадебные, праздничные и&nbsp;повседневные образы.</p>
+  </section>
+
+  <!-- FEATURED -->
+  <section class="featured" id="works">
+    <h2 class="ft-title"><span class="ft-title__serif">Избранные</span><span class="ft-title__rule"></span><span class="ft-title__bold">Работы</span></h2>
+
+    <div class="profiles">
+      <a class="profile" href="#makeup">
+        <div class="profile__top"><b>01 Макияж</b><span>Работ<br>31</span></div>
+        <div class="profile__img"><img src="../assets/img/md/makeup-03.jpg" alt="Макияж — работа Елизаветы Цветковой" loading="lazy"></div>
+      </a>
+      <a class="profile profile--big" href="#sfx">
+        <div class="profile__top"><b>02 Грим и SFX</b><span>Работ<br>24</span></div>
+        <div class="profile__img"><img src="../assets/img/md/sfx-01.jpg" alt="Грим и спецэффекты — работа Елизаветы Цветковой" loading="lazy"></div>
+      </a>
+      <a class="profile" href="#hair">
+        <div class="profile__top"><b>03 Причёски</b><span>Работ<br>13</span></div>
+        <div class="profile__img"><img src="../assets/img/md/hair-01.jpg" alt="Причёска — работа Елизаветы Цветковой" loading="lazy"></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- FULL GALLERIES -->
+  <section class="galleries">
+    <div class="gal-block" id="makeup">
+      <div class="gal-block__head">
+        <h3><span class="serif">01</span> Женский и мужской макияж</h3>
+        <p>Нюдовый, яркий, сценический, креативный и&nbsp;арт-макияж.</p>
+      </div>
+      <div class="gal"><!--GALLERY:makeup-->
+        <a class="gal__item" href="../assets/img/makeup-01.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 01</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-01.jpg" alt="Макияж — работа Елизаветы Цветковой, 1" loading="lazy" width="853" height="1280"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-02.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 02</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-02.jpg" alt="Макияж — работа Елизаветы Цветковой, 2" loading="lazy" width="1449" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-03.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 03</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-03.jpg" alt="Макияж — работа Елизаветы Цветковой, 3" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-04.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 04</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-04.jpg" alt="Макияж — работа Елизаветы Цветковой, 4" loading="lazy" width="1530" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-05.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 05</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-05.jpg" alt="Макияж — работа Елизаветы Цветковой, 5" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-06.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 06</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-06.jpg" alt="Макияж — работа Елизаветы Цветковой, 6" loading="lazy" width="828" height="1026"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-07.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 07</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-07.jpg" alt="Макияж — работа Елизаветы Цветковой, 7" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-08.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 08</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-08.jpg" alt="Макияж — работа Елизаветы Цветковой, 8" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-09.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 09</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-09.jpg" alt="Макияж — работа Елизаветы Цветковой, 9" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-10.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 10</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-10.jpg" alt="Макияж — работа Елизаветы Цветковой, 10" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-11.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 11</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-11.jpg" alt="Макияж — работа Елизаветы Цветковой, 11" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-12.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 12</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-12.jpg" alt="Макияж — работа Елизаветы Цветковой, 12" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-13.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 13</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-13.jpg" alt="Макияж — работа Елизаветы Цветковой, 13" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-14.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 14</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-14.jpg" alt="Макияж — работа Елизаветы Цветковой, 14" loading="lazy" width="1279" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-15.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 15</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-15.jpg" alt="Макияж — работа Елизаветы Цветковой, 15" loading="lazy" width="1279" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-16.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 16</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-16.jpg" alt="Макияж — работа Елизаветы Цветковой, 16" loading="lazy" width="1279" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-17.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 17</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-17.jpg" alt="Макияж — работа Елизаветы Цветковой, 17" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-18.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 18</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-18.jpg" alt="Макияж — работа Елизаветы Цветковой, 18" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-19.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 19</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-19.jpg" alt="Макияж — работа Елизаветы Цветковой, 19" loading="lazy" width="1440" height="1800"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-20.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 20</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-20.jpg" alt="Макияж — работа Елизаветы Цветковой, 20" loading="lazy" width="1365" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-21.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 21</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-21.jpg" alt="Макияж — работа Елизаветы Цветковой, 21" loading="lazy" width="1324" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-22.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 22</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-22.jpg" alt="Макияж — работа Елизаветы Цветковой, 22" loading="lazy" width="1400" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-23.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 23</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-23.jpg" alt="Макияж — работа Елизаветы Цветковой, 23" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-24.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 24</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-24.jpg" alt="Макияж — работа Елизаветы Цветковой, 24" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-25.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 25</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-25.jpg" alt="Макияж — работа Елизаветы Цветковой, 25" loading="lazy" width="1372" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-26.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 26</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-26.jpg" alt="Макияж — работа Елизаветы Цветковой, 26" loading="lazy" width="985" height="1280"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-27.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 27</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-27.jpg" alt="Макияж — работа Елизаветы Цветковой, 27" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/makeup-28.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 28</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-28.jpg" alt="Макияж — работа Елизаветы Цветковой, 28" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item gal__item--wide" href="../assets/img/makeup-29.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 29</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-29.jpg" alt="Макияж — работа Елизаветы Цветковой, 29" loading="lazy" width="1600" height="1066"></div></a>
+        <a class="gal__item gal__item--wide" href="../assets/img/makeup-30.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 30</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-30.jpg" alt="Макияж — работа Елизаветы Цветковой, 30" loading="lazy" width="1600" height="1194"></div></a>
+        <a class="gal__item gal__item--wide" href="../assets/img/makeup-31.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 31</b><span>Макияж</span></div><div class="gal__img"><img src="../assets/img/md/makeup-31.jpg" alt="Макияж — работа Елизаветы Цветковой, 31" loading="lazy" width="1600" height="1164"></div></a>
+      <!--/GALLERY--></div>
+    </div>
+    <div class="gal-block" id="sfx">
+      <div class="gal-block__head">
+        <h3><span class="serif">02</span> Грим, спецэффекты и&nbsp;бутафория</h3>
+        <p>Реалистичные раны, травмы и&nbsp;повреждения. Бутафория и&nbsp;искусственные части тела.</p>
+      </div>
+      <div class="gal"><!--GALLERY:sfx-->
+        <a class="gal__item" href="../assets/img/sfx-01.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 01</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-01.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 1" loading="lazy" width="828" height="1036"></div></a>
+        <a class="gal__item gal__item--wide" href="../assets/img/sfx-02.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 02</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-02.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 2" loading="lazy" width="1200" height="800"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-03.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 03</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-03.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 3" loading="lazy" width="1179" height="1174"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-04.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 04</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-04.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 4" loading="lazy" width="1280" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-05.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 05</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-05.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 5" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-06.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 06</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-06.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 6" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-07.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 07</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-07.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 7" loading="lazy" width="1536" height="1920"></div></a>
+        <a class="gal__item gal__item--wide" href="../assets/img/sfx-08.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 08</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-08.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 8" loading="lazy" width="1064" height="626"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-09.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 09</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-09.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 9" loading="lazy" width="1460" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-10.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 10</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-10.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 10" loading="lazy" width="1388" height="1920"></div></a>
+        <a class="gal__item gal__item--wide" href="../assets/img/sfx-11.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 11</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-11.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 11" loading="lazy" width="1600" height="1200"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-12.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 12</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-12.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 12" loading="lazy" width="828" height="988"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-13.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 13</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-13.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 13" loading="lazy" width="828" height="990"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-14.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 14</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-14.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 14" loading="lazy" width="1279" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-15.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 15</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-15.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 15" loading="lazy" width="1453" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-16.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 16</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-16.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 16" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-17.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 17</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-17.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 17" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-18.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 18</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-18.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 18" loading="lazy" width="828" height="1072"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-19.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 19</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-19.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 19" loading="lazy" width="1536" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-20.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 20</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-20.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 20" loading="lazy" width="1179" height="1462"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-21.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 21</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-21.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 21" loading="lazy" width="1179" height="1466"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-22.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 22</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-22.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 22" loading="lazy" width="1179" height="1456"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-23.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 23</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-23.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 23" loading="lazy" width="1536" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/sfx-24.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 24</b><span>Грим и SFX</span></div><div class="gal__img"><img src="../assets/img/md/sfx-24.jpg" alt="Грим и SFX — работа Елизаветы Цветковой, 24" loading="lazy" width="1440" height="1920"></div></a>
+      <!--/GALLERY--></div>
+    </div>
+    <div class="gal-block" id="hair">
+      <div class="gal-block__head">
+        <h3><span class="serif">03</span> Причёски</h3>
+        <p>От&nbsp;естественных и&nbsp;мягких форм до&nbsp;сложных творческих укладок.</p>
+      </div>
+      <div class="gal"><!--GALLERY:hair-->
+        <a class="gal__item" href="../assets/img/hair-01.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 01</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-01.jpg" alt="Причёски — работа Елизаветы Цветковой, 1" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/hair-02.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 02</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-02.jpg" alt="Причёски — работа Елизаветы Цветковой, 2" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/hair-03.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 03</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-03.jpg" alt="Причёски — работа Елизаветы Цветковой, 3" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/hair-04.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 04</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-04.jpg" alt="Причёски — работа Елизаветы Цветковой, 4" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/hair-05.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 05</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-05.jpg" alt="Причёски — работа Елизаветы Цветковой, 5" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/hair-06.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 06</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-06.jpg" alt="Причёски — работа Елизаветы Цветковой, 6" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/hair-07.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 07</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-07.jpg" alt="Причёски — работа Елизаветы Цветковой, 7" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/hair-08.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 08</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-08.jpg" alt="Причёски — работа Елизаветы Цветковой, 8" loading="lazy" width="1025" height="1280"></div></a>
+        <a class="gal__item" href="../assets/img/hair-09.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 09</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-09.jpg" alt="Причёски — работа Елизаветы Цветковой, 9" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/hair-10.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 10</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-10.jpg" alt="Причёски — работа Елизаветы Цветковой, 10" loading="lazy" width="1440" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/hair-11.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 11</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-11.jpg" alt="Причёски — работа Елизаветы Цветковой, 11" loading="lazy" width="1080" height="1920"></div></a>
+        <a class="gal__item" href="../assets/img/hair-12.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 12</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-12.jpg" alt="Причёски — работа Елизаветы Цветковой, 12" loading="lazy" width="1031" height="1396"></div></a>
+        <a class="gal__item" href="../assets/img/hair-13.jpg" target="_blank" rel="noopener"><div class="gal__top"><b>№ 13</b><span>Причёски</span></div><div class="gal__img"><img src="../assets/img/md/hair-13.jpg" alt="Причёски — работа Елизаветы Цветковой, 13" loading="lazy" width="1440" height="1920"></div></a>
+      <!--/GALLERY--></div>
+    </div>
+  </section>
+
+  <!-- ABOUT (dark) -->
+  <section class="about" id="about">
+    <div class="about__head">
+      <p class="kicker">Обо мне</p>
+      <h2 class="about__title">Меня зовут Елизавета Цветкова&nbsp;— гримёр-визажист и&nbsp;стилист по&nbsp;волосам.</h2>
+    </div>
+    <div class="skills">
+      <article><span class="serif">i.</span><h3>Работа с&nbsp;волосами</h3><p>Создание причёсок любой сложности&nbsp;— от&nbsp;естественных и&nbsp;мягких форм до&nbsp;сложных творческих укладок.</p></article>
+      <article><span class="serif">ii.</span><h3>Макияж</h3><p>Нюдовый, яркий, сценический, креативный и&nbsp;арт-макияж.</p></article>
+      <article><span class="serif">iii.</span><h3>Спецэффекты</h3><p>Создание реалистичных ран, травм и&nbsp;повреждений.</p></article>
+      <article><span class="serif">iv.</span><h3>Бутафория</h3><p>Изготовление бутафории. Работа с&nbsp;искусственными частями тела.</p></article>
+    </div>
+
+    <div class="names">
+      <p class="kicker">Мой опыт работы с&nbsp;известными личностями</p>
+      <p class="names__list">Том Фелтон <i>/</i> М.&nbsp;Найт Шьямалан <i>/</i> Егор Крид <i>/</i> Иван Охлобыстин <i>/</i> Сергей Жуков <i>/</i> Фёдор Бондарчук <i>/</i> Клава Кока <i>/</i> Люся Чеботина <i>/</i> DJ&nbsp;Smash <i>/</i> <span class="serif">и&nbsp;другие</span></p>
+    </div>
+
+    <div class="clients">
+      <p class="kicker">Среди моих клиентов</p>
+      <ul>
+        <li>Сбер</li><li>Магнит</li><li>Самокат</li><li>Comic Con</li><li>ИгроМир</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- VIDEO -->
+  <section class="video" id="video">
+    <h2 class="ft-title"><span class="ft-title__serif">Реклама и&nbsp;клипы</span><span class="ft-title__rule"></span><span class="ft-title__bold">Видео</span></h2>
+    <div class="video__grid">
+      <figure>
+        <div class="video__frame"><iframe src="https://vimeo.com/showcase/12133794/embed" title="Подборка на Vimeo" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen loading="lazy"></iframe></div>
+        <figcaption><b>Vimeo Showcase</b><a href="https://vimeo.com/showcase/12133794" target="_blank" rel="noopener">Открыть ›</a></figcaption>
+      </figure>
+      <figure>
+        <div class="video__frame"><iframe src="https://www.youtube.com/embed/videoseries?list=PLhtcIgJiTngaKnBpI05WnctSFzYX9HiOl" title="Плейлист на YouTube" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe></div>
+        <figcaption><b>YouTube Playlist</b><a href="https://www.youtube.com/playlist?list=PLhtcIgJiTngaKnBpI05WnctSFzYX9HiOl" target="_blank" rel="noopener">Открыть ›</a></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- CONTACTS (gold) -->
+  <section class="contacts" id="contacts">
+    <svg class="contacts__sweep" viewBox="0 0 800 140" preserveAspectRatio="none" aria-hidden="true"><use href="#sweep" filter="url(#brush)"/></svg>
+    <p class="kicker kicker--dark">Контакты и соцсети</p>
+    <h2 class="contacts__title">Напишите мне<span class="serif">— создадим образ</span></h2>
+    <div class="contacts__grid">
+      <a href="tel:+79772594428"><span>Номер телефона</span><b>+7 (977) 259-44-28</b></a>
+      <a href="https://t.me/ElizabethTsvet" target="_blank" rel="noopener"><span>Telegram</span><b>@ElizabethTsvet</b></a>
+      <a href="https://instagram.com/liza.tsvet" target="_blank" rel="noopener"><span>Instagram*</span><b>@liza.tsvet</b></a>
+    </div>
+    <svg class="contacts__emblem" aria-hidden="true"><use href="#emblem"/></svg>
+  </section>
+</main>
+
+<footer class="ftr">
+  <p class="ftr__logo">LIZA TSVET</p>
+  <p class="ftr__legal">* Instagram и WhatsApp — продукт Meta Platforms Inc., деятельность которой признана экстремистской и запрещена на территории Российской Федерации.</p>
+  <p>© 2026 Елизавета Цветкова · <a href="#top">Наверх</a></p>
+</footer>
+
+</body>
+</html>
