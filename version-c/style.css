@@ -87,9 +87,10 @@ svg { flex: none; }
 .hero__title {
   font-family: var(--cond); font-weight: 500; text-transform: uppercase;
   font-size: clamp(64px, 21.5vw, 236px); line-height: .86; letter-spacing: -.01em;
-  margin-top: 4px;
+  margin-top: .16em; /* room for the dots of Ё */
   position: relative; z-index: 2;
 }
+.hero__title span { display: block; }
 .hero__media { position: relative; margin-top: -32px; z-index: 1; }
 .arch {
   position: relative;
@@ -113,7 +114,6 @@ svg { flex: none; }
 }
 .hero__copy { margin-top: 12px; color: var(--muted); max-width: 44ch; }
 .hero__cta { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-top: 24px; }
-.sign { font-family: var(--script); font-size: 30px; color: var(--accent); transform: rotate(-4deg); }
 
 /* ---- stats ---- */
 .stats {
@@ -222,8 +222,7 @@ svg { flex: none; }
 /* ---- people ---- */
 .people { padding-top: 80px; }
 .people__card { position: relative; display: grid; background: var(--card); border: 1px solid var(--line); overflow: hidden; }
-.quote { position: absolute; left: 18px; top: 4px; font-family: var(--serif); font-size: 90px; line-height: 1; color: var(--accent); }
-.people__body { position: relative; padding: 70px 20px 24px; }
+.people__body { position: relative; padding: 26px 20px 24px; }
 .people__names { margin-top: 10px; font-family: var(--serif); font-style: italic; font-size: 22px; line-height: 1.35; }
 .clients { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
 .clients li { border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px; font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
@@ -337,7 +336,7 @@ svg { flex: none; }
   .about__col:last-child { padding-left: 40px; }
   .formats { columns: 1; }
   .people__names { font-size: 28px; }
-  .people__body { padding: 70px 40px 34px; }
+  .people__body { padding: 38px 40px 34px; }
   .contact__title { font-size: 40px; }
   .ftr { grid-template-columns: auto 1fr auto; align-items: center; }
   .ftr__legal { text-align: center; justify-self: center; }
