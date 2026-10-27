@@ -108,7 +108,10 @@ if (vgrids.length) {
     <div class="vplayer__stage"><div class="vplayer__frame"></div></div>
     <div class="vplayer__nav">
       <button class="vplayer__prev" type="button" aria-label="Предыдущее видео">←</button>
-      <p class="vplayer__hint">Листайте свайпом</p>
+      <div class="vplayer__mid">
+        <a class="vplayer__ext" target="_blank" rel="noopener"></a>
+        <p class="vplayer__hint">Листайте свайпом</p>
+      </div>
       <button class="vplayer__next" type="button" aria-label="Следующее видео">→</button>
     </div>`;
   document.body.appendChild(box);
@@ -116,6 +119,7 @@ if (vgrids.length) {
   const frame = $('.vplayer__frame', box);
   const title = $('.vplayer__title', box);
   const count = $('.vplayer__count', box);
+  const ext = $('.vplayer__ext', box);
   let list = [];
   let index = 0;
   let lastFocus = null;
@@ -132,6 +136,10 @@ if (vgrids.length) {
     frame.replaceChildren(ifr);
     title.textContent = card.dataset.title;
     count.textContent = `${index + 1} / ${list.length}`;
+    // fallback if a network blocks the embedded player
+    const vimeo = card.dataset.provider === 'vimeo';
+    ext.href = vimeo ? `https://vimeo.com/${card.dataset.id}` : `https://www.youtube.com/watch?v=${card.dataset.id}`;
+    ext.textContent = `Открыть на ${vimeo ? 'Vimeo' : 'YouTube'} ↗`;
   }
 
   function open(card) {

@@ -237,7 +237,10 @@ html.is-locked, html.is-locked body { overflow: hidden; }
 .vplayer__nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px var(--pad) 18px; }
 .vplayer__nav button { width: 52px; height: 52px; border: 1px solid var(--line); border-radius: 50%; font-size: 18px; }
 .vplayer__nav button:hover { border-color: var(--accent); color: var(--accent); }
+.vplayer__mid { flex: 1; min-width: 0; display: grid; justify-items: center; gap: 6px; text-align: center; }
 .vplayer__hint { font-size: 12px; color: var(--muted); }
+.vplayer__ext { font-size: 13px; color: var(--text); border-bottom: 1px solid var(--line); }
+.vplayer__ext:hover { color: var(--accent); border-color: var(--accent); }
 
 /* ---- about ---- */
 .about { padding-top: 80px; display: grid; gap: 56px; }
@@ -367,7 +370,7 @@ html.is-locked, html.is-locked body { overflow: hidden; }
   .panel__head p { text-align: right; }
   .more { width: auto; margin: 22px auto 0; padding: 0 40px; }
   .vgrid { grid-template-columns: repeat(3, 1fr); }
-  .vplayer__hint { visibility: hidden; }
+  .vplayer__hint { display: none; }
 
   .sec-title h2 { font-size: 36px; }
   .about { grid-template-columns: 1fr 1.2fr; gap: 0; }
