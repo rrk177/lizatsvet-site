@@ -1,7 +1,8 @@
-"""Fill the <!--GALLERY:cat--><!--/GALLERY--> slots in index.html.
+"""Fill the photo (<!--GALLERY:cat-->) and video (<!--VIDEOS:cat-->) slots in index.html.
 
 Run from the project root:  python3 tools/build_galleries.py
-Image list comes from tools/data.js (generated from lizatsvet.ru).
+Photos come from tools/data.js, videos from tools/videos.json
+(her Vimeo showcase 12133794 and YouTube playlist «Мои проекты»; covers are in assets/video/).
 """
 import json, re, pathlib
 
@@ -27,3 +28,23 @@ for page, fn in (('index.html', item),):
     p.write_text(html, encoding='utf-8')
     print(page, 'ok')
 
+
+from html import escape
+VIDEOS = json.loads((ROOT / 'tools/videos.json').read_text(encoding='utf-8'))
+
+def video(v):
+    full = f"{v['artist']} — {v['title']}" if v['title'] else v['artist']
+    return (f'<button class="vitem" type="button" data-provider="{v["provider"]}" data-id="{v["id"]}" data-title="{escape(full)}">'
+            f'<span class="vitem__thumb"><img src="{v["thumb"]}" alt="" loading="lazy" decoding="async" width="960" height="540">'
+            f'<span class="vitem__play"><svg><use href="#i-play"/></svg></span></span>'
+            f'<span class="vitem__text"><b>{escape(v["artist"])}</b><span>{escape(v["title"])}</span></span></button>')
+
+p = ROOT / 'index.html'
+html = p.read_text(encoding='utf-8')
+for cat in ('ads', 'clips'):
+    body = '\n        '.join(video(v) for v in VIDEOS if v['cat'] == cat)
+    html, n = re.subn(rf'<!--VIDEOS:{cat}-->.*?<!--/VIDEOS-->',
+                      f'<!--VIDEOS:{cat}-->\n        {body}\n      <!--/VIDEOS-->', html, count=1, flags=re.S)
+    assert n == 1, cat
+p.write_text(html, encoding='utf-8')
+print('videos ok:', {c: sum(v['cat'] == c for v in VIDEOS) for c in ('ads', 'clips')})

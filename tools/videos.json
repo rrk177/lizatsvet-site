@@ -1,0 +1,234 @@
+[
+ {
+  "cat": "ads",
+  "provider": "vimeo",
+  "id": "762327409",
+  "artist": "Магнит",
+  "title": "Кибер-доставка",
+  "thumb": "assets/video/vimeo-762327409.jpg"
+ },
+ {
+  "cat": "ads",
+  "provider": "vimeo",
+  "id": "928876050",
+  "artist": "Москвич",
+  "title": "Drive with Pleasure",
+  "thumb": "assets/video/vimeo-928876050.jpg"
+ },
+ {
+  "cat": "ads",
+  "provider": "vimeo",
+  "id": "1170024408",
+  "artist": "Тинькофф",
+  "title": "Инвестируй одной левой",
+  "thumb": "assets/video/vimeo-1170024408.jpg"
+ },
+ {
+  "cat": "ads",
+  "provider": "vimeo",
+  "id": "1170022445",
+  "artist": "Сбербанк",
+  "title": "СберКот",
+  "thumb": "assets/video/vimeo-1170022445.jpg"
+ },
+ {
+  "cat": "ads",
+  "provider": "vimeo",
+  "id": "1054194268",
+  "artist": "Москвич",
+  "title": "Манифест",
+  "thumb": "assets/video/vimeo-1054194268.jpg"
+ },
+ {
+  "cat": "ads",
+  "provider": "vimeo",
+  "id": "672281085",
+  "artist": "YAPPY",
+  "title": "JONY",
+  "thumb": "assets/video/vimeo-672281085.jpg"
+ },
+ {
+  "cat": "ads",
+  "provider": "vimeo",
+  "id": "511983075",
+  "artist": "MAKFA",
+  "title": "Первые для первых",
+  "thumb": "assets/video/vimeo-511983075.jpg"
+ },
+ {
+  "cat": "ads",
+  "provider": "vimeo",
+  "id": "1034226140",
+  "artist": "СБП",
+  "title": "Федерация фигурного катания",
+  "thumb": "assets/video/vimeo-1034226140.jpg"
+ },
+ {
+  "cat": "ads",
+  "provider": "vimeo",
+  "id": "937732714",
+  "artist": "PWL",
+  "title": "A Timeless Victory",
+  "thumb": "assets/video/vimeo-937732714.jpg"
+ },
+ {
+  "cat": "ads",
+  "provider": "vimeo",
+  "id": "593340067",
+  "artist": "Cosmos Hotel Group",
+  "title": "Manifest",
+  "thumb": "assets/video/vimeo-593340067.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "cuZC6fJlnIo",
+  "artist": "Руки Вверх",
+  "title": "#ТанецПОП",
+  "thumb": "assets/video/youtube-cuZC6fJlnIo.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "pUov86haT88",
+  "artist": "GAYAZOV$ BROTHER$",
+  "title": "Увезите меня на дип-хаус",
+  "thumb": "assets/video/youtube-pUov86haT88.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "BiMgQ6itBvk",
+  "artist": "DJ Smash feat. Люся Чеботина",
+  "title": "Амнезия",
+  "thumb": "assets/video/youtube-BiMgQ6itBvk.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "krnU7TBqL6A",
+  "artist": "DJ Smash feat. Дмитрий Ланской",
+  "title": "Гимн регби",
+  "thumb": "assets/video/youtube-krnU7TBqL6A.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "cSfvB0OZ-5Q",
+  "artist": "Смоки Мо",
+  "title": "Белый блюз",
+  "thumb": "assets/video/youtube-cSfvB0OZ-5Q.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "o8R5IZu3HEw",
+  "artist": "PKHAT feat. Boulevard Depo & Yanix",
+  "title": "AFK",
+  "thumb": "assets/video/youtube-o8R5IZu3HEw.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "SjhVeXJanhQ",
+  "artist": "АЙКЬЮ",
+  "title": "На эмоциях",
+  "thumb": "assets/video/youtube-SjhVeXJanhQ.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "tpQUdo-Su8g",
+  "artist": "Zvonkiy",
+  "title": "Shine",
+  "thumb": "assets/video/youtube-tpQUdo-Su8g.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "oQz7NaOmDKs",
+  "artist": "ST",
+  "title": "Роллексы",
+  "thumb": "assets/video/youtube-oQz7NaOmDKs.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "wiz22jLZh8k",
+  "artist": "Xcho",
+  "title": "Майка",
+  "thumb": "assets/video/youtube-wiz22jLZh8k.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "7ZMH5vwiJGs",
+  "artist": "DINAT",
+  "title": "Полюби меня",
+  "thumb": "assets/video/youtube-7ZMH5vwiJGs.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "p2Td4Zusxn8",
+  "artist": "Nick Coldstar",
+  "title": "Dota 2 Diss",
+  "thumb": "assets/video/youtube-p2Td4Zusxn8.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "FKvEG7G8oyg",
+  "artist": "Марго Базыкина",
+  "title": "Лови",
+  "thumb": "assets/video/youtube-FKvEG7G8oyg.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "JxbL08lpzNM",
+  "artist": "Жека",
+  "title": "Турникет",
+  "thumb": "assets/video/youtube-JxbL08lpzNM.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "a3WzJEqV98Q",
+  "artist": "Жека и Ярослав Сумишевский",
+  "title": "Мужчины никогда не плачут",
+  "thumb": "assets/video/youtube-a3WzJEqV98Q.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "9-Zf-ouUXrw",
+  "artist": "Дмитрий Дюжев",
+  "title": "На шаг впереди",
+  "thumb": "assets/video/youtube-9-Zf-ouUXrw.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "gW-1sout720",
+  "artist": "Mass Madness",
+  "title": "Digital Waste",
+  "thumb": "assets/video/youtube-gW-1sout720.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "xhue5cV-G1E",
+  "artist": "JANAGA",
+  "title": "Одна такая",
+  "thumb": "assets/video/youtube-xhue5cV-G1E.jpg"
+ },
+ {
+  "cat": "clips",
+  "provider": "youtube",
+  "id": "c7t9Jo7Etgc",
+  "artist": "JANAGA",
+  "title": "Невеста",
+  "thumb": "assets/video/youtube-c7t9Jo7Etgc.jpg"
+ }
+]
